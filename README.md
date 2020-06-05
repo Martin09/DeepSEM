@@ -1,6 +1,7 @@
 
 # DeepSEM
 A deep neural net approach to nanostructure analysis in scanning electron microscopy (SEM) images.
+![Overall image](readme_imgs/overall_image.png "Overall Goal")
 
 ## Introduction
 Machine learning and neural network techniques offer exciting new possibilities in all fields of science and engineering. Some recent examples include detecting 2D materials [[REF](https://www.nature.com/articles/s41699-020-0137-z)] and battery degredation research [[REF](https://www.nature.com/articles/s41467-020-16233-5)]. Nevertheless, general adoption is slow due to the steep learning curve resulting in a high barrier to entry for people wihtout computer science backgrounds.
