@@ -12,4 +12,7 @@ For my post-doc at LMSC, following my PhD, I thus looked at answering the questi
 
 This repository is my attempt to share what I have learned through easy-to-use tutorials and Google Colab scripts. My hope is that these codes will help lower the barrier to entry for other researchers looking to apply similar techniques in their own workflows.
 
-
+## Content
+The code in this project is divided up by problem/use case:
+1. [Basic object detection for nanowire growth yield analysis](nanowire_yield)
+2. [Image segmentation for analysis of nanowire characteristics](nanowire_segmentation)
