@@ -1,6 +1,6 @@
 
 # DeepSEM
-A deep neural net approach to nanostructure analysis in scanning electron microscopy (SEM) images using [detectron2](https://github.com/facebookresearch/detectron2).
+A deep neural net approach to nanostructure analysis in scanning electron microscope (SEM) images using [detectron2](https://github.com/facebookresearch/detectron2).
 ![Overall image](readme_imgs/overall_image.png "Overall Goal")
 
 ## Introduction
