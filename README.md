@@ -8,7 +8,7 @@ Machine learning and neural network techniques offer exciting new possibilities 
 
 During my PhD at the [Laboratory of Semiconductor Materials (LMSC)](https://www.epfl.ch/labs/lmsc/) at [EPFL](https://www.epfl.ch/en), one of the most tedious and time-consuming tasks was the analysis of scanning electron microscope (SEM) images. This analysis was a necessary evil in order to obtain quantitative and comparable data to improve the growth parameters for creating our nanostructures. 
 
-For my post-doc at LMSC, following my PhD, I thus looked at answering the question: **How can we use advanced ML techniques to extract unbiased, quantiative information from SEM images in a scalable way?** 
+For my post-doc at LMSC, following my PhD, I thus looked at answering the question: **How can we use advanced ML techniques to extract quantiative information from SEM images in a scalable way?** 
 
 This repository is my attempt to share what I have learned through easy-to-use tutorials and Google Colab scripts. My hope is that these codes will help lower the barrier to entry for other researchers looking to apply similar techniques in their own workflows.
 
