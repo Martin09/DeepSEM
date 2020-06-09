@@ -10,7 +10,7 @@ During my PhD at the [Laboratory of Semiconductor Materials (LMSC)](https://www.
 
 For my post-doc at LMSC, following my PhD, I thus looked at answering the question: **How can we use advanced ML techniques to extract quantiative information from SEM images in a scalable way?** 
 
-This repository is my attempt to share what I have learned through easy-to-use tutorials and Google Colab scripts. My hope is that these codes will help lower the barrier to entry for other researchers looking to apply similar techniques in their own workflows.
+This repository is my attempt to share what I have learned through easy-to-use tutorials written as Google Colab scripts. My hope is that these tutorials will help lower the barrier to entry for other researchers looking to apply similar techniques in their own field.
 
 ## Content
 The code in this project is divided up by problem/use case:
