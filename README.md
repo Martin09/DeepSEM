@@ -14,5 +14,5 @@ This repository is my attempt to share what I have learned through easy-to-use t
 
 ## Content
 The code in this project is divided up by problem/use case:
-1. [Basic object detection for nanowire growth yield analysis](nanowire_yield)
-2. [Image segmentation for analysis of nanowire characteristics](nanowire_segmentation)
+1. [Object detection for nanowire growth yield analysis](nanowire_yield)
+2. [Image segmentation for nanowire dimension analysis](nanowire_segmentation)
