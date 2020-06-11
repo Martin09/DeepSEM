@@ -1,7 +1,7 @@
 
 # DeepSEM
 A deep neural net approach to nanostructure analysis in scanning electron microscope (SEM) images using [detectron2](https://github.com/facebookresearch/detectron2).
-![Overall image](readme_imgs/overall_image.png "Overall Goal")
+![Overall image](imgs/overall_image.png "Overall Goal")
 
 ## Introduction
 Machine learning and neural network techniques offer exciting new possibilities in all fields of science and engineering. Some recent examples include detecting 2D materials [[REF](https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.13.064017), [REF](https://www.nature.com/articles/s41699-020-0137-z)] and battery degredation research [[REF](https://www.nature.com/articles/s41467-020-16233-5)]. Nevertheless, general adoption is slow due to the steep learning curve resulting in a high barrier to entry for people wihtout computer science backgrounds.
@@ -14,5 +14,6 @@ This repository is my attempt to share what I have learned through easy-to-use t
 
 ## Content
 The code in this project is divided up by problem/use case:
-1. [Object detection for nanowire growth yield analysis](nanowire_yield)
-2. [Image segmentation for nanostructure dimension analysis](nanostruct_seg)
+1. [Object detection - Nanowire growth yield analysis](obj_detection-NW_yield)
+2. [Image segmentation - Nanowire dimension analysis](segmentation-NWs)
+3. [Image segmentation - Nanomembrane growth analysis](segmentation-NMs)
