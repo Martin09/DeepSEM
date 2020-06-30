@@ -1,4 +1,4 @@
-# Nanowire Yield Analysis
+# Nanomembrane Growth Analysis
 ![NM Segementation Summary](../imgs/nm_summary.png)
 
 ## Goal
