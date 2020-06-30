@@ -15,9 +15,11 @@ The training data in this example consists of SEM images all taken at 0° tilt a
 
 ## Results
 In this project we succeeded in training a neural network to classify and segment different types of growth structures that we identified in our SEM images. A subset of this analysis is shown as an example below:
+
 ![NM Segementation](../imgs/nm_classification.png)
 
 From here, we could take the output of the neural network and perform further analysis which yields important information such as growth yield and various size distributions of each class:
+
 ![NM Analysis](../imgs/nm_analysis.png)
 
 The most exciting part about this approach is that it scales very well to a large number of images. Furthermore, with more training data it will become more and more accurate over time.
