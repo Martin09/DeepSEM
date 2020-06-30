@@ -1,12 +1,28 @@
-# [UNDER CONSTRUCTION...]
-...
+# Veritcal Nanowire Growth Analysis
+![NM Segementation Summary](../imgs/nw_summary.png)
 
-# Nanostructure Segmentation
-[insert image here]
-## Introduction
-[introduction here]
+## Goal
+Similarly to the nanomembrane segmentation tutorial, the goal of this application was to calculate nanowire (NW) growth yield and dimensions using deep neural nets. These NWs were grown using [molecular beam epitaxy (MBE)](https://en.wikipedia.org/wiki/Molecular-beam_epitaxy) on an SiO<sub>2</sub>-covered substrate patterned with holes. The NWs are grown selectively from these holes. Often, the selectivity of the SiO<sub>2</sub> and NW growth yield isn't perfect. Therefore, it is important to characterize the NW growth yield in a particular growth so that we can modify the growth conditions/substrate preparation to maximize yield in subsequent growths. At the same time, we would like to characterize the lengths and widths of NWs that grew well in order to get an idea about which growth conditions give the longest NWs.
+
 ## Colab Notebooks
-This tutorial consists of three Colab notebooks:
+There are three Jupyter notebooks in this tutorial, each one representing an incremental step in achieving the above goal. As in the other tutorials, these have been designed to run inside of a Google Colab instance for its ease of use, cross-platform compatiblity and access to GPUs for faster training. Here are the direct links to the Colab notebooks:
 1. [Image preparation and labelling](https://colab.research.google.com/github/Martin09/DeepSEM/blob/master/segmentation-NWs/1_nw_seg_image_prep.ipynb)
 2. [Model training](https://colab.research.google.com/github/Martin09/DeepSEM/blob/master/segmentation-NWs/2_nw_seg_training.ipynb)
 3. [Inference and post-processing](https://colab.research.google.com/github/Martin09/DeepSEM/blob/master/segmentation-NWs/3_nw_seg_inference.ipynb)
+
+## Summary
+The training data in this example consists of SEM images all taken at 0° tilt and 50k magnification. Since we are performing image segmentation, we need a high-resolution image to generate accurate segmentation masks. Therefore the full 1024x768 SEM image resolution is used for training. Furthermore, the images used were saved by Zeiss' software without any annotations, therefore we do not need to do any image cropping during image preparation.  See [Notebook 1](https://colab.research.google.com/github/Martin09/DeepSEM/blob/master/segmentation-NMs/1_nm_seg_image_prep.ipynb), as mentioned above, for information on how the images can be filtered according to magnification and saved in PNG format. For labelling, the PNG files are uploaded to a [Labelbox](https://labelbox.com) project for easy labelling with segmentation masks in a collaborative project supporting multiple labellers. Once labeling is complete, the labels can be exported from Labelbox and uploaded to Google Colab for use in training which is the topic of [Notebook 2](https://colab.research.google.com/github/Martin09/DeepSEM/blob/master/segmentation-NMs/2_nm_seg_training.ipynb). Finally, using a trained model for labelling a new SEM image, including post-processing of neural network output, is covered in [Notebook 3](https://colab.research.google.com/github/Martin09/DeepSEM/blob/master/segmentation-NMs/3_nm_seg_inference.ipynb).
+
+## Results
+In this project we succeeded in training a neural network to classify and segment different types of growth structures that we identified in our SEM images. A subset of this analysis is shown as an example below:
+
+![NM Segementation](../imgs/nm_classification.png)
+
+From here, we could take the output of the neural network and perform further analysis which yields important information such as growth yield and various size distributions of each class:
+
+![NM Analysis](../imgs/nm_analysis.png)
+
+The most exciting part about this approach is that it scales very well to a large number of images. Furthermore, with more training data it will become more and more accurate over time.
+
+## Acknowledgements
+Thanks to Nicholas Morgan for providing me with these SEM images of GaAs NMs grown in Si trenches and for helping me with the image labeling. If you are interested in learning more about this research, feel free to check out [this](https://pubs.rsc.org/en/content/articlehtml/2020/nr/c9nr08453c) paper.
