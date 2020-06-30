@@ -25,4 +25,4 @@ From here, we could take the output of the neural network and perform further an
 The most exciting part about this approach is that it scales very well to a large number of images. Furthermore, with more training data it will become more and more accurate over time.
 
 ## Acknowledgements
-Thanks to Nicholas Morgan for providing me with these SEM images of GaAs NMs grown in Si trenches and for helping me with the image labeling. If you are interested in learning more about this research, feel free to check out [this](https://pubs.rsc.org/en/content/articlehtml/2020/nr/c9nr08453c) paper.
+Thanks to Nick Morgan for providing me with these SEM images of GaAs NMs grown in Si trenches and for helping me with the image labeling. If you are interested in learning more about this research, feel free to check out [this](https://pubs.rsc.org/en/content/articlehtml/2020/nr/c9nr08453c) paper.
